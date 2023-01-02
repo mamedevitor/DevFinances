@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>432</width>
+    <height>188</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Adicionar Saldo</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../imagens, icones/icone_frmprincipal.png</normaloff>../imagens, icones/icone_frmprincipal.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lblsaldo">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>20</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(84,84,84);
+font: 18pt &quot;Montserrat&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Adicionar Saldo em Conta</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textsaldo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 2px;
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="placeholderText">
+     <string>0,00</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnsalvar">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>130</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(91, 165, 70);
+color: white;
+border-radius: 2px
+}
+
+QPushButton:hover {
+background-color: rgb(101, 175, 80);
+color: white;
+border-radius: 2px
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Adicionar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btncancelar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(240, 242, 245);
+	color: rgb(255, 0, 0);
+	border: 2px solid rgb(255,0,0);
+	border-radius: 2px;
+}
+
+QPushButton:hover {
+	
+	background-color: rgb(240, 242, 245);
+	color: rgb(255,99,71);
+	border: 2px solid rgb(255,99,71);
+	border-radius: 2px;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Cancelar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="msgerror">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>106</y>
+      <width>191</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#F0F0F0;</string>
+    </property>
+    <property name="text">
+     <string>Insira apenas números!</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

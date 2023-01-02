@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frm_remover_e_alterar_transaction</class>
+ <widget class="QMainWindow" name="frm_remover_e_alterar_transaction">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>412</width>
+    <height>329</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>412</width>
+    <height>329</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>412</width>
+    <height>329</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Remover/Alterar Transações</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../imagens, icones/dinheiro-icone_1.ico</normaloff>../imagens, icones/dinheiro-icone_1.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>20</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(84,84,84);
+font: 18pt &quot;Montserrat&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Selecione a Transação</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="selecionar_item">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>331</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textdescricao">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255); border-radius: 2px;
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Descrição</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textvalor">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 2px;
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>0,00</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="data">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Montserrat</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 2px;
+color: rgb(84,84,84);
+font: 10pt &quot;Montserrat&quot;;</string>
+    </property>
+    <property name="date">
+     <date>
+      <year>2021</year>
+      <month>3</month>
+      <day>14</day>
+     </date>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnremover">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(240, 242, 245);
+	color: rgb(255, 0, 0);
+	border: 2px solid rgb(255,0,0);
+	border-radius: 2px;
+}
+
+QPushButton:hover {
+	
+	background-color: rgb(240, 242, 245);
+	color: rgb(255,99,71);
+	border: 2px solid rgb(255,99,71);
+	border-radius: 2px;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Remover dados</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnalterar">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>270</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(240, 242, 245);
+color: rgb(91, 165, 70);
+border-radius: 2px;
+border: 2px solid rgb(91, 165, 70)
+}
+
+QPushButton:hover {
+background-color: rgb(240, 242, 245);
+color: rgb(111,185,90);
+border-radius: 2px;
+border: 2px solid rgb(111, 185, 90)
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Alterar dados</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_ok">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>59</y>
+      <width>31</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ok</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="check_despesa">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>82</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Despesa</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="check_ganho">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>240</y>
+      <width>82</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ganho</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
